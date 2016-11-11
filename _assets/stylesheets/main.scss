@@ -6,3 +6,17 @@
 //= require_self
 
 // Put styles here!
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.logo img {
+	padding: 5px 0;
+}
+footer {
+	background-color: #173b28;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

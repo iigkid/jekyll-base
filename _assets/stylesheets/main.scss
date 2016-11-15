@@ -10,9 +10,35 @@
 	text-align: center;
 	margin: 0 auto;
 }
-
+h1 {
+	font-size: 24px;
+	&.center {
+		margin: 20px 10px
+	}
+}
+header.navbar.navbar-default {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #fff;
+	background-image: none;
+	border: none;
+	> .container > .col-xs-6 {
+		padding-left: 0;
+	}
+}
 .logo img {
 	padding: 5px 0;
+}
+.phone {
+	color: #0066CC;
+	padding: 15px 0 15px 5px;
+	text-align: right;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-style: italic;
+}
+.container#content {
+	margin-bottom: 15px;
 }
 footer {
 	background-color: #173b28;
@@ -20,3 +46,100 @@ footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+//home page
+body {
+	background-image: url('/images/agent-home1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 375px;
+	background-position: center 50px;
+}
+.homeimg {
+	height: 375px;
+	> div {
+    	position: relative;
+    	top: 315px;
+	    .btn-primary {
+	    	width: 120px;
+	    	margin-left: 25px;
+	    }
+    }
+}
+// Device Based css
+
+// Large Screen size - Desktop : 1200px wide and larger
+@media (min-width:1200px) {
+
+} // End Large Screen
+
+// Medium Screen Size - Tablet horizontal : 992px - 1199px wide
+@media (min-width:992px) and (max-width:1199px) {
+
+}  //end Medium Screen
+
+// Small  Screen Size - Tablet Vertical : 768px - 991px wide
+@media (min-width:768px) and (max-width:991px) {
+.phone {
+	font-size: 1.3em;
+}
+} // End Small Screen
+
+// Xtra-Small Screen Size - Phone : 480px - 767px
+@media (max-width:767px) {
+.navbar-nav {
+	margin: 0 !important;
+    width: 100%;
+    text-align: right;
+}
+.navbar-default .navbar-collapse {
+	//border: none;
+    //box-shadow: none;
+}
+.container > .navbar-collapse {
+    //margin-right: -30px;
+    //margin-left: -30px;
+}
+.phone {
+	font-size: 1.1em;
+}
+body {
+	background-image: url('/images/agent-home-xs2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 250px;
+	background-position: center 50px;
+}
+.homeimg {
+	height: 250px;
+	> div {
+    	position: relative;
+    	top: 200px;
+	    .btn-primary {
+	    	margin-left: 15px;
+	    }
+    }
+}
+
+} // End Xtra Small Screen
+
+// XX-Small Screen Size - Phone : max width 600px
+@media (max-width:600px) {
+body {
+	background-image: url('/images/agent-home-xxs4.jpg');
+}
+.homeimg > div {
+    top: 200px;
+    .btn-primary {
+	    margin-left: 0;
+	}
+	a:first-child {
+	    margin-right: 15px;
+	}
+}
+} // End XX Small Screen
+
+// XXX-Small Screen Size - Phone : max width 480px
+@media (max-width:480px) {
+.homeimg > div {
+	text-align: center;
+}
+} // End XX Small Screen

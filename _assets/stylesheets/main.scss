@@ -22,7 +22,7 @@ header.navbar.navbar-default {
 	background-color: #fff;
 	background-image: none;
 	border: none;
-	> .container > .col-xs-6 {
+	> .container > .col-sm-6, > .container > .col-xs-8 {
 		padding-left: 0;
 	}
 }
@@ -125,6 +125,15 @@ body {
 @media (max-width:600px) {
 body {
 	background-image: url('/images/agent-home-xxs4.jpg');
+}
+header.navbar.navbar-default > .container {
+	padding-left: 5px;
+	padding-right: 10px;
+	.phone {
+		font-size: 1em;
+		font-weight: normal;
+		font-style: normal;
+	}
 }
 .homeimg > div {
     top: 200px;

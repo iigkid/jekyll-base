@@ -49,7 +49,7 @@ footer {
 
 //home page
 body {
-	background-image: url('/images/agent-home1.jpg');
+	background-image: url('{{site.baseurl}}/images/agent-home1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 375px;
 	background-position: center 50px;
@@ -103,7 +103,7 @@ body {
 	font-size: 1.1em;
 }
 body {
-	background-image: url('/images/agent-home-xs2.jpg');
+	background-image: url('{{site.baseurl}}/images/agent-home-xs2.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 250px;
 	background-position: center 50px;
@@ -124,7 +124,7 @@ body {
 // XX-Small Screen Size - Phone : max width 600px
 @media (max-width:600px) {
 body {
-	background-image: url('/images/agent-home-xxs4.jpg');
+	background-image: url('{{site.baseurl}}/images/agent-home-xxs4.jpg');
 }
 header.navbar.navbar-default > .container {
 	padding-left: 5px;

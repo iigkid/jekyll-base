@@ -20,7 +20,7 @@ google_analytics: UA-3065776-9
 markdown: kramdown
 
 # Plugins, yay!
-gems:
+plugins:
   # Creates an XML sitemap.
   - jekyll-sitemap
   # Compile Coffeescript to Javascript.
